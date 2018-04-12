@@ -1,0 +1,14 @@
+{
+    "name": "restpackio/restpack-php",
+    "description": "Restpack API Client",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Restpack\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT"
+}
