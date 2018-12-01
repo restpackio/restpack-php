@@ -5,7 +5,7 @@ class Screenshot {
   private $client;
 
   public function __construct($accessToken) {
-    $this->client = new RestpackClient($accessToken, "https://restpack.io/api/screenshot/v3");
+    $this->client = new RestpackClient($accessToken, "https://restpack.io/api/screenshot/v5");
   }
 
   public function capture($url, $options = []) {
