@@ -28,6 +28,8 @@ require "vendor/autoload.php";
 
 ## Screenshot API
 
+For detailed documentation, please visit [Screenshot API v5 Reference page](https://restpack.io/screenshot/docs).
+
 ```php
 $screenshot = new Restpack\Screenshot("<YOUR ACCESS TOKEN>");
 
@@ -46,6 +48,8 @@ $screenshot.captureHTMLToImage("<p><b>Bold text</b> etc</p>", [ format => "png" 
 
 ## HTML To PDF API
 
+For detailed documentation, please visit [HTML to PDF API v5 Reference page](https://restpack.io/html2pdf/docs).
+    
 ```php
 $htmlpdf = new Restpack\HTMLToPDF("<YOUR ACCESS TOKEN>");
 

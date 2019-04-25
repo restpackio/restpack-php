@@ -1,6 +1,6 @@
 {
     "name": "restpackio/restpack-php",
-    "description": "Restpack API Client",
+    "description": "Restpack.io PHP client for HTML to PDF API, and Screenshot API",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -10,5 +10,12 @@
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     },
+    "authors": [
+        {
+            "name": "Restpack LLC",
+            "homepage": "https://restpack.io"
+        }
+    ],
+    "keywords": ["html2pdf", "html", "pdf", "convert", "API", "REST", "svg", "css", "screenshot", "png", "enterprise"],
     "license": "MIT"
 }
