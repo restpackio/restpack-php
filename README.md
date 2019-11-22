@@ -28,22 +28,22 @@ require "vendor/autoload.php";
 
 ## Screenshot API
 
-For detailed documentation, please visit [Screenshot API v5 Reference page](https://restpack.io/screenshot/docs).
+For detailed documentation, please visit [Screenshot API v6 Reference page](https://restpack.io/screenshot/docs).
 
 ```php
 $screenshot = new Restpack\Screenshot("<YOUR ACCESS TOKEN>");
 
 // Capture given URL. Return the document details and CDN url of the Image
-$screenshot.capture("http://google.com", [ format => "png" /* , other options */ ])
+$screenshot->capture("http://google.com", [ "format" => "png" /* , other options */ ])
 
 // Capture given html content. Return the document details and CDN url of the Image
-$screenshot.captureHTML("<p><b>Bold text</b> etc</p>", [ format => "png" /* , other options */ ])
+$screenshot->captureHTML("<p><b>Bold text</b> etc</p>", [ "format" => "png" /* , other options */ ])
 
 // Capture given URL. Return the image file as Buffer
-$screenshot.captureToImage("http://google.com", [ format => "png" /* , other options */ ])
+$screenshot->captureToImage("http://google.com", [ "format" => "png" /* , other options */ ])
 
 // Capture given html content. Return the image file as Buffer
-$screenshot.captureHTMLToImage("<p><b>Bold text</b> etc</p>", [ format => "png" /* , other options */ ])
+$screenshot->captureHTMLToImage("<p><b>Bold text</b> etc</p>", [ "format" => "png" /* , other options */ ])
 ```
 
 ## HTML To PDF API
@@ -54,14 +54,14 @@ For detailed documentation, please visit [HTML to PDF API v5 Reference page](htt
 $htmlpdf = new Restpack\HTMLToPDF("<YOUR ACCESS TOKEN>");
 
 // Convert given URL to PDF. Return the document details and CDN url of PDF
-$htmlpdf.convert("http://google.com", [ pdf_page => "A4" /* , other options */ ])
+$htmlpdf->convert("http://google.com", [ "pdf_page" => "A4" /* , other options */ ])
 
 // Convert given html content to PDF. Return the document details and CDN url of PDF
-$htmlpdf.convertHTML("<p><b>Bold text</b> etc</p>", [ pdf_page => "A4" /* , other options */ ])
+$htmlpdf->convertHTML("<p><b>Bold text</b> etc</p>", [ "pdf_page" => "A4" /* , other options */ ])
 
 // Convert given URL to PDF. Return the PDF document as Buffer
-$htmlpdf.convertToImage("http://google.com", [ pdf_page => "A4" /* , other options */ ])
+$htmlpdf->convertToPDF("http://google.com", [ "pdf_page" => "A4" /* , other options */ ])
 
 // Convert given html content to PDF. Return the PDF document as Buffer
-$htmlpdf.convertHTMLToImage("<p><b>Bold text</b> etc</p>", [ pdf_page => "A4" /* , other options */ ])
+$htmlpdf->convertHTMLToPDF("<p><b>Bold text</b> etc</p>", [ "pdf_page" => "A4" /* , other options */ ])
 ```
