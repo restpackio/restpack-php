@@ -5,7 +5,7 @@ class HTMLToPDF {
   private $client;
 
   public function __construct($accessToken) {
-    $this->client = new RestpackClient($accessToken, "https://restpack.io/api/html2pdf/v6");
+    $this->client = new RestpackClient($accessToken, "https://restpack.io/api/html2pdf/v7");
   }
 
   public function convert($url, $options = []) {
